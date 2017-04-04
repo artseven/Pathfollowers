@@ -1,9 +1,17 @@
-
+function loadSounds () {
+  ion.sound({
+    sounds: [{name: "snap"}, {name: "tap"}],
+    path: "lib/ion.sound-3.0.7/sounds/",
+    preload: true,
+    volume: 1.0
+  });
+}
 // THROTTLING ATTACKS OF THE TOWERS
 $(document).ready(function(){
   var tower1 = document.getElementById('tower');
   $(tower1).on('click', throttle(function(){
     attack1();
+    ion.sound.play("tap");
     var $this = $(this).toggleClass("enlarged");
     setTimeout(function () {
       $this.toggleClass("enlarged");
@@ -15,6 +23,7 @@ $(document).ready(function(){
   var tower_1 = document.getElementById('tower-1');
   $(tower_1).on('click', throttle(function(){
     attack1();
+     ion.sound.play("snap");
     var $this = $(this).toggleClass("enlarged");
     setTimeout(function () {
       $this.toggleClass("enlarged");
