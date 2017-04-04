@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>USA DEFENSE</title>
+		<link rel="stylesheet" href="css\styles.css">
+	</head>
+	<body>
+<!-- <button id='stop'>Stop animation</button> -->
+		<center>
+  	<div class='gamescore'>
+				<div class="icons">
+					<img src='images\big-mexican.png'>
+					TACOMAN<br>
+					This immigrant eats taco while so he can take heavy damage
+				</div>
+				<div class="icons" id='second'>
+					<img  src="images\small-boy-mexico.png">
+					CONTRABANDISTA<br>
+
+					A drug smuggler dressed as a kid trying to get to the other side
+				</div>
+				<div class="icons" id='third'>
+
+						<img  src="images\mariachi-small.png">
+						MARIACHI<br>
+						Gets inspired by his own music to run fast
+
+				</div>
+        <button onclick="invade()">Start game</button>
+		</div>
+		<div style="display:none;">
+		  <img id="attacker1" src="images\big-mexican.png">
+		</div>
+		<div style="display:none;">
+			<img id="attacker2" src="images\small-boy-mexico.png">
+		</div>
+		<div style="display:none;">
+			<img id="attacker3" src="images\mariachi-small.png">
+		</div>
+
+		<div id='gamerules'>
+			<div padding="10px">IMMIGRANTS ENERGY<br></div>
+			<img src='images\big-mexican.png'>
+			<progress id="health-of-mexican" value="20" max="20"></progress>
+      <p><img  src="images\small-boy-mexico.png">
+			<progress id="health-of-kid" value="10" max="10"></progress></p>
+      <img src="images\mariachi-small.png">
+			<progress id="health-of-mariarchi" value="15" max="15"></progress>
+
+
+		</div>
+				<div class="tower-board">
+					<img id='tower' draggable="true" ondragstart="drag(event)" src='images\tower.png'>
+					<img id='tower-1' draggable="true" ondragstart="drag(event)" src='images\tower.png'>
+					<!-- <img onclick='attack1()' id='tower0' draggable="true" ondragstart="drag(event)" src='images\tower.png'> -->
+					<img id='tower2' draggable="true" ondragstart="drag(event)" src='images\customs-officer (1).png'>
+					<!-- <img id='tower20' draggable="true" ondragstart="drag(event)" src='images\customs-officer (1).png'> -->
+					<!-- <img onclick="attack2()" id='tower221' draggable="true" ondragstart="drag(event)" src='images\customs-officer (1).png'> -->
+					<img id='tower3' draggable="true" ondragstart="drag(event)" src='images\trump.png'>
+					<!-- <img id='tower3' draggable="true" ondragstart="drag(event)" src='images\trump.png'> -->
+    	  </div>
+
+			<div id='tower-info'>
+				TOWERS INFO<br>
+				<div class="tower-tiles">
+					<img src='images\tower.png'>
+						SENTRY TOWER<br><br>
+						Does basic damage once every 3 seconds
+				</div>
+				<div class="tower-tiles">
+					<img src='images\customs-officer (1).png'>
+						CUSTOMS OFFICER<br><br>
+						Does no damage but can slow down for visa check every 5 seconds
+				</div>
+				<div class="tower-tiles">
+					<img src='images\trump.png'>
+						TRUMP<br><br>
+						Does whatever he wants but takes long time to cooldown(takes half of immigrant's energy today)
+				</div>
+
+
+			</div>
+
+		<div class='spots'>
+			<div id="place1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div id="place7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	</center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="game.js"></script>
+  </body>
+</html>

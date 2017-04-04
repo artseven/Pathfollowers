@@ -1,0 +1,243 @@
+canvas {
+  /*background: url(background-mexico.png);*/
+  position: absolute;
+  left: 420px;
+  top: 130px;
+  z-index: -1;
+  border: 1px black solid;
+}
+body {
+    /*background-color: lightblue;*/
+    background-image: url(IMG_59081.jpg);
+
+}
+
+.gamescore {
+  width: 700px;
+  height: 120px;
+  border: 1px solid black;
+  font-size: 26px;
+  font-family: "Century Gothic";
+  color: white;
+  background-color: #c2b280;
+  padding: none;
+  text-align: left;
+  opacity: 0.9;
+
+  }
+.icons {
+  font-family: "New Helvetica";
+  font-size: 15px;
+  border: 1px solid black;
+  width: 190px;
+  height: 107px;
+  padding: 6px;
+}
+#second {
+  position: absolute;
+  top: 8px;
+  left: 621px;
+}
+#third {
+  position: absolute;
+  top: 8px;
+  left:824px;
+}
+#stop {
+  position: absolute;
+  float: left;
+}
+
+/*SPOTS TO PLACE TOWERS*/
+.spots {
+  float: right;
+}
+
+#gamerules {
+
+  float:left;
+  background: beige;
+  height: 520px;
+  width: 260px;
+  border: 1px solid black;
+  margin-left: 150px;
+  opacity: 0.9;
+}
+
+#tower-info {
+  float: right;
+  background: beige;
+  position: absolute;
+  left: 1220px;
+  height: 520px;
+  width: 300px;
+  border: 1px solid black;
+  margin-right: 305px;
+  opacity: 0.9;
+}
+
+.tower-tiles {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+#place1 {
+    width: 65px;
+    height: 70px;
+    padding: 5px;
+    background-color: inherit;
+    border: 1px solid #aaaaaa;
+    border-radius: 50%;
+    position: absolute;
+    left: 490px;
+    top: 210px;
+  }
+
+#place2 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 595px;
+  top: 475px;
+}
+#place3 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 695px;
+  top: 450px;
+}
+#place4 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 795px;
+  top: 475px;
+}
+#place5 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 695px;
+  top: 220px;
+}
+#place6 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 985px;
+  top: 220px;
+}
+#place7 {
+  width: 65px;
+  height: 70px;
+  padding: 5px;
+  background-color: inherit;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  position: absolute;
+  left: 885px;
+  top: 295px;
+}
+
+/*GAMESTART BUTTON*/
+button {
+  margin: 20px 10px 0 0;
+  padding: 10px ;
+  font-size: 14px;
+  font-family: "Century Gothic";
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: beige;
+  position: absolute;
+  left: 1030px;
+  top: 25px;
+}
+
+/*TOWERS*/
+#tower {
+margin: 10;
+padding: 5;
+}
+
+#tower2 {
+  margin: 10;
+  padding: 5;
+}
+#tower3 {
+  margin: 10;
+  padding: 10;
+}
+
+
+
+.tower-board {
+  float: right;
+  background: beige;
+  height: 520px;
+  width: 100px;
+  border: 1px solid black;
+  margin-right: 305px;
+  opacity: 0.9;
+}
+
+.invisible {
+  display:none;
+}
+.enlarged {
+  height: 70px;
+  width: 70px;
+}
+.enlarged-2 {
+  height: 90px;
+  width: 75px;
+}
+.enlarged-3 {
+  height: 70px;
+  width: 100px;
+}
+/*ANIMATION*/
+.classname {
+-webkit-animation-name: cssAnimation;
+-webkit-animation-duration:3s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation {
+from {
+-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+}
+to {
+-webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+}
+}
+#attacker1 #attacker2 #attacker3 {
+  /*resize: vertical;
+  height: 10px;
+  width: 10px;*/
+  background-color: inherit;
+}
