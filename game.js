@@ -1,17 +1,22 @@
-function loadSounds () {
-  ion.sound({
-    sounds: [{name: "snap"}, {name: "tap"}],
-    path: "lib/ion.sound-3.0.7/sounds/",
-    preload: true,
-    volume: 1.0
-  });
-}
+
 // THROTTLING ATTACKS OF THE TOWERS
 $(document).ready(function(){
+
+  function loadSounds () {
+    ion.sound({
+      // Installing snap and tap sounds
+      sounds: [{name: "snap"}, {name: "tap"}],
+
+      path: "lib/ion.sound-3.0.7/sounds/",
+      preload: true,
+      multiplay: true,
+      volume: 1.0
+    });
+  }
   var tower1 = document.getElementById('tower');
   $(tower1).on('click', throttle(function(){
     attack1();
-    ion.sound.play("tap");
+    ion.sound.play("snap");
     var $this = $(this).toggleClass("enlarged");
     setTimeout(function () {
       $this.toggleClass("enlarged");
@@ -176,10 +181,10 @@ function sq(x) { return x*x }
 
 // creating immigrants.
 
-var bigMexican2 = new  Immigrant( 20,0.13, simplePath, buildSegLength(simplePath), 'attacker1');
+var bigMexican2 = new  Immigrant(20,0.13, simplePath, buildSegLength(simplePath), 'attacker1');
 // var bigMexican = new Immigrant(20,0.08, simplePath, buildSegLength(simplePath), 'attacker1');
 //
-var mexicanKid = new Immigrant(10,0.15, simplePath,  buildSegLength(simplePath), 'attacker2');
+var mexicanKid = new Immigrant(10,0.17, simplePath,  buildSegLength(simplePath), 'attacker2');
 // var mexicanKid2 = new Immigrant(15,0.09, simplePath, buildSegLength(simplePath), "attacker2");
 // var coyote = new Immigrant(15,0.2, simplePath, buildSegLength(simplePath), 'attacker2');
 //
@@ -330,3 +335,5 @@ function attack3 () {
 
   console.log("I'm taking half of the life");
 }
+
+// sounds
