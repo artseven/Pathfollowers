@@ -37,21 +37,23 @@ body {
 #first {
     position: absolute;
     top: 8px;
-    left: 435px;
+    left: 445px;
     border: 1px solid black;
 }
 
 #second {
     position: absolute;
     top: 8px;
-    left: 725px;
+    left: 745px;
     border: 1px solid black;
 }
 
 #third {
     position: relative;
-    top: 8px;
+    top: -10px;
     left: 600px;
+    border: 1px solid black;
+    width: 230px;
 }
 
 #stop {
@@ -191,8 +193,8 @@ button {
     border-radius: 0;
     background-color: beige;
     position: relative;
-    left: 680px;
-    top: -65px;
+    left: 580px;
+    top: -20px;
 }
 
 
